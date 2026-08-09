@@ -1,0 +1,385 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #050b09;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 50% 10%,
+            #123d2c 0%,
+            #081710 35%,
+            #030806 75%
+        );
+
+    color: white;
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.page {
+    width: 100%;
+    max-width: 480px;
+
+    margin: 0 auto;
+
+    padding:
+        12px
+        10px
+        30px;
+}
+
+
+/* =========================
+   POSTER
+========================= */
+
+.poster-card {
+    width: 100%;
+
+    background: #000;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid
+        rgba(255,255,255,0.12);
+
+    box-shadow:
+        0 15px 45px
+        rgba(0,0,0,0.55);
+}
+
+
+/*
+   Poster is 9:16.
+   We DO NOT crop it.
+*/
+
+.poster {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    aspect-ratio: 9 / 16;
+
+    object-fit: contain;
+
+    background: #000;
+}
+
+
+/* =========================
+   JOIN CARD
+========================= */
+
+.join-card {
+    position: relative;
+
+    margin-top: 12px;
+
+    padding:
+        24px
+        18px
+        20px;
+
+    text-align: center;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(25,54,42,0.95),
+            rgba(7,20,14,0.96)
+        );
+
+    border: 1px solid
+        rgba(90,255,150,0.16);
+
+    box-shadow:
+        0 15px 40px
+        rgba(0,0,0,0.45),
+
+        inset 0 1px
+        rgba(255,255,255,0.08);
+}
+
+
+/* Small WhatsApp Circle */
+
+.whatsapp-logo {
+    width: 48px;
+    height: 48px;
+
+    margin: 0 auto 12px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #25D366;
+
+    box-shadow:
+        0 0 25px
+        rgba(37,211,102,0.35);
+}
+
+.whatsapp-logo span {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid white;
+
+    border-radius: 50%;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+
+/* Heading */
+
+.join-card h1 {
+    font-size: 23px;
+
+    line-height: 30px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.3px;
+}
+
+
+/* Description */
+
+.join-card p {
+    margin-top: 7px;
+
+    color: #aebdb5;
+
+    font-size: 13px;
+
+    line-height: 20px;
+}
+
+
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+
+.whatsapp-btn {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 62px;
+
+    margin-top: 19px;
+
+    padding: 0 17px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    color: #fff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #25D366,
+            #18b957
+        );
+
+    border: 1px solid
+        rgba(255,255,255,0.25);
+
+    border-radius: 15px;
+
+    font-size: 19px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 8px 25px
+        rgba(37,211,102,0.25);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+
+/* Button hover */
+
+.whatsapp-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 32px
+        rgba(37,211,102,0.40);
+}
+
+
+/* Button press */
+
+.whatsapp-btn:active {
+    transform: scale(0.97);
+}
+
+
+/* WhatsApp Icon */
+
+.wa-icon {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid white;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+}
+
+
+/* Arrow */
+
+.arrow {
+    position: absolute;
+
+    right: 18px;
+
+    font-size: 31px;
+
+    line-height: 1;
+
+    font-weight: 300;
+}
+
+
+/* =========================
+   SECURITY TEXT
+========================= */
+
+.secure {
+    margin-top: 14px;
+
+    color: #718178;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .page {
+        padding:
+            8px
+            8px
+            24px;
+    }
+
+    .poster-card {
+        border-radius: 14px;
+    }
+
+    .join-card {
+        margin-top: 9px;
+
+        padding:
+            20px
+            14px
+            17px;
+
+        border-radius: 18px;
+    }
+
+    .whatsapp-logo {
+        width: 43px;
+        height: 43px;
+    }
+
+    .join-card h1 {
+        font-size: 20px;
+
+        line-height: 27px;
+    }
+
+    .join-card p {
+        font-size: 12px;
+
+        line-height: 18px;
+    }
+
+    .whatsapp-btn {
+        min-height: 58px;
+
+        margin-top: 16px;
+
+        font-size: 17px;
+
+        border-radius: 13px;
+    }
+
+    .secure {
+        font-size: 10px;
+    }
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 360px) {
+
+    .join-card h1 {
+        font-size: 18px;
+    }
+
+    .whatsapp-btn {
+        font-size: 16px;
+    }
+}
