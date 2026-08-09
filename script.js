@@ -3,7 +3,7 @@
 // =====================================
 
 // Apna WhatsApp number yahan daalo
-// Example: India 9876543210
+// Example: India +63 9752666808
 const whatsappNumber = "+63 9752666808";
 
 
