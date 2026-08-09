@@ -19,14 +19,9 @@ const whatsappLink =
     encodeURIComponent(message);
 
 
-// =====================================
-// BUTTON
-// =====================================
-
-const whatsappBtn =
-    document.getElementById(
-        "floatingWhatsappBtn"
-    );
+// WhatsApp direct chat
+// Link is handled directly by the HTML button.
+console.log("WhatsApp chat button ready.");
 
 
 // Set WhatsApp URL
