@@ -2,7 +2,7 @@
 // WHATSAPP SETTINGS
 // =====================================
 
-const whatsappNumber = "639752666808";
+const whatsappNumber = "9133557532";
 
 const message =
     "Hello, I want to join the WhatsApp group.";
